@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>くらしの台帳 | わが家の家計簿</title>
+<meta name="description" content="お金の流れが見えると、暮らしが整う。収入・支出・貯蓄をひとつの台帳で見渡す、わが家の家計簿です。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">
+    <p class="brand-en">OUR HOUSEHOLD, IN BALANCE.</p>
+    <p class="brand-name">くらしの台帳</p>
+    <p class="brand-tag">お金の流れが見えると、暮らしが整う。</p>
+  </div>
+  <nav class="main-nav" aria-label="メインメニュー">
+    <a href="#/" data-route="">ホーム</a>
+    <a href="#/transactions" data-route="transactions">入出金</a>
+    <a href="#/budgets" data-route="budgets">予算管理</a>
+    <a href="#/calendar" data-route="calendar">カレンダー</a>
+    <a href="#/report" data-route="report">月次レポート</a>
+    <a href="#/goals" data-route="goals">貯蓄・目標</a>
+  </nav>
+</header>
+
+<main id="view"></main>
+
+<footer class="site-footer">
+  <p>くらしの台帳は、架空の3人家族（共働き夫婦と小学生の子ども）の家計を記録したデモです。金額はすべてサンプルデータから計算しています。</p>
+  <p>記録の追加・編集・削除と予算の変更は、このブラウザの中（localStorage）に保存され、外部に送信されることはありません。</p>
+  <button id="reset-demo" class="ghost-btn" type="button">デモデータをリセット</button>
+</footer>
+
+<a class="fab" href="#/transactions" aria-label="記録を追加">＋ 記録</a>
+
+<nav class="bottom-nav" aria-label="モバイルメニュー">
+  <a href="#/" data-route="">ホーム</a>
+  <a href="#/transactions" data-route="transactions">入出金</a>
+  <a href="#/budgets" data-route="budgets">予算</a>
+  <a href="#/calendar" data-route="calendar">カレンダー</a>
+  <a href="#/report" data-route="report">レポート</a>
+  <a href="#/goals" data-route="goals">目標</a>
+</nav>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>
